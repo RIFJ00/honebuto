@@ -9,10 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: "Calm Neutral Blue" - Main: #F8F7F4 (Alabaster), Primary Text/Accent: #2C3E50 (Charcoal Blue), Secondary Text: #7F8C8D (Slate Gray), Highlight: #E67E22 (Carrot Orange) -->
-    <!-- Application Structure Plan: The SPA uses JavaScript to simulate a multi-page experience within a single file. Navigation links toggle the visibility of different <section> elements. The dashboard sections are grouped for easy management, while the 'Detailed Report' and 'Audio Overview' sections act as separate 'pages'. This provides a richer, more organized user experience than a simple long-scrolling page, allowing users to focus on one content type at a time (dashboard, full text, or audio). -->
-    <!-- Visualization & Content Choices: Key quantitative targets and policy frameworks are visualized to make them digestible. Example: [Report Info: Policy Ranking Scores] -> [Goal: Compare strategic importance] -> [Viz: Chart.js Horizontal Bar Chart] -> [Interaction: Hover for score details] -> [Justification: Provides an immediate summary of high-impact policies]. [Report Info: Major Investment Targets (GX, DX)] -> [Goal: Show scale and components] -> [Viz: Chart.js Doughnut Chart] -> [Interaction: Click to update detail pane] -> [Justification: Manages information density by showing details on demand]. All charts use Chart.js Canvas. The new audio page uses a standard HTML5 <audio> player for accessibility and ease of use. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Noto Sans JP', sans-serif;
@@ -97,11 +93,7 @@
 <body class="antialiased">
     <header class="bg-white py-6 shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold text-center text-[#2C3E50]">
-                <a href="https://www5.cao.go.jp/keizai-shimon/kaigi/minutes/2025/0606shiryo_01.pdf" target="_blank" rel="noopener noreferrer" class="transition-colors duration-300 hover:text-[#E67E22] hover:underline">
-                    経済財政運営と改革の基本方針 2025 原案
-                </a>
-            </h1>
+            <h1 class="text-3xl font-bold text-center text-[#2C3E50]">経済財政運営と改革の基本方針 2025 原案</h1>
             <p class="text-center text-lg text-[#7F8C8D] mt-1">原案をベースに一般社団法人日本みらい研が作成</p>
             <nav id="main-nav" class="mt-4 border-b-2 border-gray-200">
                 <ul class="flex justify-center flex-wrap space-x-2 sm:space-x-8 text-sm sm:text-base font-bold">
@@ -594,7 +586,7 @@
                     <li><strong>避難所環境の抜本的改善</strong>: 発災時にトイレ、簡易ベッド、温かい食事、入浴設備などを速やかに提供できるよう、資機材備蓄支援やプッシュ型支援の迅速化、学校の空調整備などを進める。</li>
                     <li><strong>東日本大震災からの復興・再生</strong>: 「福島の復興なくして東北の復興なし、東北の復興なくして日本の再生なし」との決意の下、2025年夏に見直す基本方針に基づき、復興・再生に全力を尽くす。ALPS処理水の安全性確保と風評対策、除去土壌の県外最終処分、帰還困難区域の将来的な避難指示解除などを国が前面に立って取り組む。</li>
                 </ul>
-                <p>これらの施策は、建設業、インフラ関連産業、防災技術開発企業、地方自治体などに広範な影響を与える。「防災庁」の創設は、日本の災害対応のあり方を大きく変える可能性があり、その実効性が注目される。</p>
+                <p>これらの施策は、建設業、インフラ関連産業、防災技術開発企業、地方自治体などに広範な影響を与える。「防災庁」の創設は、日本の災害対応のあり方を大きく変える可能性があり、その実効性が注目される。
 
                 <h2>IX. 主要キーワード一覧</h2>
                 <p>本報告書および「経済財政運営と改革の基本方針2025（原案）」における主要なキーワードを以下に列挙する。</p>
@@ -661,15 +653,32 @@
 
         <section id="audio" class="page-section">
              <div class="bg-white p-6 sm:p-8 rounded-lg shadow">
-                <h2 class="text-3xl font-bold mb-4 text-center">音声による概要解説</h2>
-                <p class="text-base mb-8 text-[#7F8C8D] text-center">
-                    骨太方針2025の要点を音声で解説します。以下のプレーヤーで再生してください。
-                </p>
-                <div class="flex justify-center">
-                    <audio controls class="w-full max-w-md">
-                        <source src="https://www.rifj.jp/wp/wp-content/uploads/2025/06/骨太方針2025：賃上げ起爆！日本経済「成長」と「幸福」への大転換.m4a" type="audio/mp4">
-                        ご使用のブラウザは音声の再生に対応していません。
-                    </audio>
+                <h2 class="text-3xl font-bold mb-8 text-center">音声による概要解説</h2>
+                
+                <div class="mb-10">
+                    <h3 class="text-xl font-bold mb-2 text-center">骨太方針2025：賃上げ起爆！日本経済「成長」と「幸福」への大転換</h3>
+                    <p class="text-base mb-4 text-[#7F8C8D] text-center">
+                        骨太方針2025の要点を音声で解説したものである。以下のプレーヤーで再生できる。
+                    </p>
+                    <div class="flex justify-center">
+                        <audio controls class="w-full max-w-md">
+                            <source src="https://www.rifj.jp/wp/wp-content/uploads/2025/06/骨太方針2025：賃上げ起爆！日本経済「成長」と「幸福」への大転換.m4a" type="audio/mp4">
+                            ご使用のブラウザは音声の再生に対応していません。
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="border-t pt-10">
+                    <h3 class="text-xl font-bold mb-2 text-center">骨太の方針2025原案 解説</h3>
+                    <p class="text-base mb-4 text-[#7F8C8D] text-center">
+                        骨太の方針2025の原案について解説したものである。以下のプレーヤーで再生できる。
+                    </p>
+                    <div class="flex justify-center">
+                        <audio controls class="w-full max-w-md">
+                            <source src="https://www.rifj.jp/wp/wp-content/uploads/2025/06/経済財政諮問会議-2.m4a" type="audio/mp4">
+                            ご使用のブラウザは音声の再生に対応していません。
+                        </audio>
+                    </div>
                 </div>
             </div>
         </section>
@@ -678,8 +687,8 @@
 
     <footer class="bg-white border-t mt-12 py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#7F8C8D] text-sm">
-            <p>このサイトは、内閣府が公表した「経済財政運営と改革の基本方針2025（原案）」を基に作成されたページです。（2025年6月9日作成）</p>
-            <p class="mt-1">内容の解釈や表現は、情報の可視化と理解促進を目的としています。正確な情報については、必ず原文をご確認ください。</p>
+            <p>このサイトは、内閣府が公表した「経済財政運営と改革の基本方針2025（原案）」を基に作成されたページである。（2025年6月9日作成）</p>
+            <p class="mt-1">内容の解釈や表現は、情報の可視化と理解促進を目的とするものである。正確な情報については、必ず原文を参照のこと。</p>
         </div>
     </footer>
 
@@ -947,461 +956,3 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 </body>
 </html>
-```承知いたしました。ご指摘の通り、タイトルにリンクを設定しました。
-
-具体的には、`<h1>`タグ内の「経済財政運営と改革の基本方針 2025 原案」のテキストに、ご指定のPDFへのリンクを埋め込みました。タイトルをクリックすると、新しいタブで公式の原案PDFが開きます。
-
-以下が修正を反映したHTMLコードです。
-
-
-```html
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>経済財政運営と改革の基本方針 2025 原案</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: "Calm Neutral Blue" - Main: #F8F7F4 (Alabaster), Primary Text/Accent: #2C3E50 (Charcoal Blue), Secondary Text: #7F8C8D (Slate Gray), Highlight: #E67E22 (Carrot Orange) -->
-    <!-- Application Structure Plan: The SPA uses JavaScript to simulate a multi-page experience within a single file. Navigation links toggle the visibility of different <section> elements. The dashboard sections are grouped for easy management, while the 'Detailed Report' and 'Audio Overview' sections act as separate 'pages'. This provides a richer, more organized user experience than a simple long-scrolling page, allowing users to focus on one content type at a time (dashboard, full text, or audio). -->
-    <!-- Visualization & Content Choices: Key quantitative targets and policy frameworks are visualized to make them digestible. Example: [Report Info: Policy Ranking Scores] -> [Goal: Compare strategic importance] -> [Viz: Chart.js Horizontal Bar Chart] -> [Interaction: Hover for score details] -> [Justification: Provides an immediate summary of high-impact policies]. [Report Info: Major Investment Targets (GX, DX)] -> [Goal: Show scale and components] -> [Viz: Chart.js Doughnut Chart] -> [Interaction: Click to update detail pane] -> [Justification: Manages information density by showing details on demand]. All charts use Chart.js Canvas. The new audio page uses a standard HTML5 <audio> player for accessibility and ease of use. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
-    <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            background-color: #F8F7F4;
-            color: #2C3E50;
-        }
-        .chart-container {
-            position: relative;
-            margin: auto;
-            height: 40vh;
-            width: 100%;
-            max-height: 400px;
-        }
-        .nav-link {
-            cursor: pointer;
-            transition: color 0.3s ease, border-bottom-color 0.3s ease;
-        }
-        .nav-link:hover, .nav-link.active {
-            color: #E67E22;
-            border-bottom-color: #E67E22;
-        }
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-        .interactive-card {
-            cursor: pointer;
-        }
-        .report-content h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #E67E22;
-        }
-        .report-content h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-        }
-         .report-content h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-top: 1.25rem;
-            margin-bottom: 0.75rem;
-        }
-        .report-content p, .report-content li {
-            line-height: 1.8;
-            margin-bottom: 1rem;
-        }
-        .report-content ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-        }
-        .report-content table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
-        }
-        .report-content th, .report-content td {
-            border: 1px solid #ddd;
-            padding: 0.75rem;
-            text-align: left;
-        }
-        .report-content th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        .page-section {
-            display: none;
-        }
-        .page-section.visible {
-            display: block;
-        }
-    </style>
-</head>
-<body class="antialiased">
-    <header class="bg-white py-6 shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold text-center text-[#2C3E50]">
-                <a href="https://www5.cao.go.jp/keizai-shimon/kaigi/minutes/2025/0606shiryo_01.pdf" target="_blank" rel="noopener noreferrer" class="transition-colors duration-300 hover:text-[#E67E22] hover:underline">
-                    経済財政運営と改革の基本方針 2025 原案
-                </a>
-            </h1>
-            <p class="text-center text-lg text-[#7F8C8D] mt-1">原案をベースに一般社団法人日本みらい研が作成</p>
-            <nav id="main-nav" class="mt-4 border-b-2 border-gray-200">
-                <ul class="flex justify-center flex-wrap space-x-2 sm:space-x-8 text-sm sm:text-base font-bold">
-                    <li><a data-target="dashboard" class="nav-link py-2 border-b-2 border-transparent active">方針のポイント</a></li>
-                    <li><a data-target="report" class="nav-link py-2 border-b-2 border-transparent">詳細レポート</a></li>
-                    <li><a data-target="audio" class="nav-link py-2 border-b-2 border-transparent">音声概要</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        
-        <section id="dashboard" class="page-section visible">
-            <div id="dashboard-content">
-                <section id="home" class="mb-16 scroll-mt-24">
-                    <h2 class="text-2xl font-bold mb-2">基本方針のポイント：新しい経済モデルへの転換</h2>
-                    <p class="text-base mb-6 text-[#7F8C8D]">
-                        「基本方針2025」は、日本経済を過去30年続いた「コストカット型経済」から、「賃上げを起点とした成長型経済」へと転換させることを目指すものである。このダッシュボードは、その壮大なビジョンと具体的な政策を対話的に解き明かし、国民一人ひとりが「今日より明日はよくなる」と実感できる「新しい日本」の姿を探るためのツールである。
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                        <div class="bg-white p-5 rounded-lg shadow card">
-                            <h3 class="font-bold text-lg">実質賃金上昇</h3>
-                            <p class="text-3xl font-bold text-[#E67E22] mt-2">年率 1% 程度</p>
-                            <p class="text-sm text-[#7F8C8D] mt-1">物価上昇を上回る賃上げの定着を目指す</p>
-                        </div>
-                        <div class="bg-white p-5 rounded-lg shadow card">
-                            <h3 class="font-bold text-lg">国内投資目標</h3>
-                            <p class="text-3xl font-bold text-[#E67E22] mt-2">135兆円</p>
-                            <p class="text-sm text-[#7F8C8D] mt-1">2030年度目標。「投資立国」の実現へ</p>
-                        </div>
-                        <div class="bg-white p-5 rounded-lg shadow card">
-                            <h3 class="font-bold text-lg">GX投資</h3>
-                            <p class="text-3xl font-bold text-[#E67E22] mt-2">150兆円超</p>
-                            <p class="text-sm text-[#7F8C8D] mt-1">今後10年間の官民連携による投資規模</p>
-                        </div>
-                        <div class="bg-white p-5 rounded-lg shadow card">
-                            <h3 class="font-bold text-lg">インバウンド目標</h3>
-                            <p class="text-3xl font-bold text-[#E67E22] mt-2">15兆円</p>
-                            <p class="text-sm text-[#7F8C8D] mt-1">2030年の訪日外国人旅行消費額目標</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-xl font-bold mb-4">主要政策の戦略的評価ランキング</h3>
-                        <p class="text-sm mb-4 text-[#7F8C8D]">
-                            本レポートの分析に基づき、政策を「戦略的重要性」「経済的インパクト」「社会的インパクト」「実現可能性」「変革可能性」の5つの観点から評価し、総合スコアでランキングしたものである。バーにカーソルを合わせると、評価の内訳が表示される。
-                        </p>
-                        <div class="chart-container h-96 sm:h-[500px]">
-                            <canvas id="policyRankingChart"></canvas>
-                        </div>
-                    </div>
-                </section>
-                <section id="growth" class="mb-16 scroll-mt-24">
-                    <h2 class="text-3xl font-bold border-l-4 border-[#E67E22] pl-4 mb-4">成長のエンジン</h2>
-                    <p class="text-base mb-8 text-[#7F8C8D]">
-                        「成長型経済」を実現するための原動力となる政策群である。持続的な賃上げの実現から、GX・DXといった未来への大胆な投資、そして海外の活力の取り込みまで、日本経済の新たな成長軌道を描くための核心的な取り組みをまとめたものである。
-                    </p>
-                    <div class="space-y-12">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4">賃上げと人への投資</h3>
-                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                <div class="bg-white p-6 rounded-lg shadow">
-                                    <h4 class="font-bold text-lg mb-2">中小企業の賃金向上推進5か年計画</h4>
-                                    <p class="text-sm text-[#7F8C8D] mb-4">雇用の7割を支える中小企業の賃上げ原資確保を強力に支援するものである。</p>
-                                    <ul class="space-y-2 text-sm">
-                                        <li class="flex items-start"><span class="text-[#E67E22] mr-2">✓</span><strong>価格転嫁の徹底:</strong> 労務費上昇分を取引価格に反映できる環境を整備。</li>
-                                        <li class="flex items-start"><span class="text-[#E67E22] mr-2">✓</span><strong>生産性向上支援:</strong> 官民60兆円規模の省力化投資を後押し。</li>
-                                        <li class="flex items-start"><span class="text-[#E67E22] mr-2">✓</span><strong>最低賃金引上げ:</strong> 全国平均1,500円目標に向けた継続的努力と支援。</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white p-6 rounded-lg shadow">
-                                    <h4 class="font-bold text-lg mb-2">三位一体の労働市場改革</h4>
-                                    <p class="text-sm text-[#7F8C8D] mb-4">個人の能力を最大限に引き出し、成長分野への挑戦を後押しするものである。</p>
-                                    <ul class="space-y-2 text-sm">
-                                        <li class="flex items-start"><span class="text-[#E67E22] mr-2">✓</span><strong>リ・スキリング強化:</strong> AI・デジタル分野を中心に学び直しの機会を拡充。</li>
-                                        <li class="flex items-start"><span class="text-[#E67E22] mr-2">✓</span><strong>労働移動の円滑化:</strong> キャリアサポートを充実させ、成長分野への転職を促進。</li>
-                                        <li class="flex items-start"><span class="text-[#E67E22] mr-2">✓</span><strong>多様な働き方の推進:</strong> 「年収の壁」対策など、柔軟な働き方を支援。</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-4">未来を創る「投資立国」</h3>
-                            <p class="text-base mb-6 text-[#7F8C8D]">
-                                将来の賃金・所得増の源泉となる国内投資を拡大するものである。下のグラフの各項目をクリックすると、その分野の主要な政策が表示される。
-                            </p>
-                            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
-                                <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow">
-                                   <h4 class="font-bold text-lg mb-2 text-center">主要投資分野の内訳</h4>
-                                   <div class="chart-container h-72">
-                                       <canvas id="investmentDoughnutChart"></canvas>
-                                   </div>
-                                </div>
-                                <div id="investment-details" class="lg:col-span-3 bg-white p-6 rounded-lg shadow flex items-center justify-center">
-                                    <p class="text-center text-[#7F8C8D]">グラフの項目を選択して詳細を表示</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="nation" class="mb-16 scroll-mt-24">
-                    <h2 class="text-3xl font-bold border-l-4 border-[#E67E22] pl-4 mb-4">国のカタチ</h2>
-                    <p class="text-base mb-8 text-[#7F8C8D]">
-                        人口減少という大きな課題に立ち向かい、日本の未来の姿を再構築するための政策群である。「令和の日本列島改造」を掲げる地方創生から、食料安全保障の確立、文化・スポーツの振興まで、持続可能で魅力ある国土づくりを目指すものである。
-                    </p>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4">地方創生2.0：令和の日本列島改造</h3>
-                        <p class="text-sm mb-6 text-[#7F8C8D]">
-                           人口減少を直視し、若者や女性に選ばれる魅力的な地域を作るための5つの柱である。各カードをクリックすると、具体的な目標や施策が表示される。
-                        </p>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="card interactive-card bg-white p-6 rounded-lg shadow" data-target="nation-detail-1">
-                                <h4 class="font-bold text-lg mb-2">① 地方の生活環境創生</h4>
-                                <p class="text-sm text-[#7F8C8D]">安心して働き、暮らせる環境を作る。</p>
-                                <div id="nation-detail-1" class="hidden mt-4 pt-4 border-t text-sm space-y-2">
-                                   <p><strong>目標:</strong> 東京圏から地方への若者の流れを倍増させる。</p>
-                                   <p><strong>施策:</strong> 買物弱者対策、医療・交通確保、副業・兼業の推進。</p>
-                                </div>
-                            </div>
-                            <div class="card interactive-card bg-white p-6 rounded-lg shadow" data-target="nation-detail-2">
-                                <h4 class="font-bold text-lg mb-2">② 地方の経済創生</h4>
-                                <p class="text-sm text-[#7F8C8D]">稼ぐ力を高め、付加価値を創出する。</p>
-                                 <div id="nation-detail-2" class="hidden mt-4 pt-4 border-t text-sm space-y-2">
-                                   <p><strong>目標:</strong> 地方の生産性を東京圏と同水準に。</p>
-                                   <p><strong>施策:</strong> 農林水産物輸出・インバウンド消費3倍、スタートアップ支援。</p>
-                                </div>
-                            </div>
-                            <div class="card interactive-card bg-white p-6 rounded-lg shadow" data-target="nation-detail-3">
-                                <h4 class="font-bold text-lg mb-2">③ 人や企業の地方分散</h4>
-                                <p class="text-sm text-[#7F8C8D]">新たな人の流れを創り出す。</p>
-                                 <div id="nation-detail-3" class="hidden mt-4 pt-4 border-t text-sm space-y-2">
-                                   <p><strong>目標:</strong> 関係人口1,000万人、のべ1億人。</p>
-                                   <p><strong>施策:</strong> 「ふるさと住民登録制度」創設、ワーケーション推進。</p>
-                                </div>
-                            </div>
-                             <div class="card interactive-card bg-white p-6 rounded-lg shadow" data-target="nation-detail-4">
-                                <h4 class="font-bold text-lg mb-2">④ 新時代のインフラと技術活用</h4>
-                                <p class="text-sm text-[#7F8C8D]">AI・デジタルで地域課題を解決。</p>
-                                 <div id="nation-detail-4" class="hidden mt-4 pt-4 border-t text-sm space-y-2">
-                                   <p><strong>目標:</strong> GX産業立地、デジタルライフライン全国整備。</p>
-                                   <p><strong>施策:</strong> ワット・ビット連携によるデータセンター地方分散。</p>
-                                </div>
-                            </div>
-                             <div class="card interactive-card bg-white p-6 rounded-lg shadow" data-target="nation-detail-5">
-                                <h4 class="font-bold text-lg mb-2">⑤ 広域リージョン連携</h4>
-                                <p class="text-sm text-[#7F8C8D]">市町村の枠を超えて連携する。</p>
-                                 <div id="nation-detail-5" class="hidden mt-4 pt-4 border-t text-sm space-y-2">
-                                   <p><strong>目標:</strong> 都道府県域を超えた広域連携を推進。</p>
-                                   <p><strong>施策:</strong> 中小規模自治体への伴走支援強化。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="security" class="mb-16 scroll-mt-24">
-                    <h2 class="text-3xl font-bold border-l-4 border-[#E67E22] pl-4 mb-4">暮らしの安心</h2>
-                    <p class="text-base mb-8 text-[#7F8C8D]">
-                        国民の生命と財産を守り、誰もが安心して暮らせる社会を築くための政策である。頻発する災害への備えを抜本的に強化する「防災庁」の設置から、経済安全保障、そして誰一人取り残さない包摂的な社会の実現まで、国の根幹を支える取り組みを紹介する。
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-white p-6 rounded-lg shadow">
-                            <h3 class="text-xl font-bold mb-4">防災・減災・国土強靱化</h3>
-                            <p class="text-sm text-[#7F8C8D] mb-4">
-                                災害対応の司令塔として、2026年度中に「防災庁」を内閣直下に設置し、平時から復興までを一元的に指揮し、迅速かつ効果的な対応を目指すものである。
-                            </p>
-                            <div class="border-2 border-dashed border-gray-300 rounded-lg p-4">
-                                <div class="text-center font-bold text-lg mb-2">【防災庁の役割】</div>
-                                <div class="text-center text-xl font-bold bg-[#E67E22] text-white py-2 px-4 rounded-full mb-2">防災庁 (専任大臣)</div>
-                                <div class="text-center text-2xl">↓</div>
-                                <div class="grid grid-cols-3 gap-2 text-center text-sm">
-                                    <div class="bg-gray-100 p-2 rounded"><strong>平時</strong><br>政府全体の防災施策推進</div>
-                                    <div class="bg-gray-100 p-2 rounded"><strong>発災時</strong><br>初動対応の指揮</div>
-                                    <div class="bg-gray-100 p-2 rounded"><strong>復旧期</strong><br>復旧・復興支援</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow">
-                            <h3 class="text-xl font-bold mb-4">経済安全保障と戦略的自律性</h3>
-                             <p class="text-sm text-[#7F8C8D] mb-4">
-                                経済的な威圧や技術流出から国益を守るため、経済安全保障体制を強化するものである。
-                            </p>
-                            <ul class="space-y-3">
-                                <li class="flex items-center"><span class="w-8 h-8 rounded-full bg-[#2C3E50] text-white flex items-center justify-center font-bold mr-3">1</span> 経済安保推進法の見直し・強化</li>
-                                <li class="flex items-center"><span class="w-8 h-8 rounded-full bg-[#2C3E50] text-white flex items-center justify-center font-bold mr-3">2</span> 重要技術（AI, 量子等）の育成・保護</li>
-                                <li class="flex items-center"><span class="w-8 h-8 rounded-full bg-[#2C3E50] text-white flex items-center justify-center font-bold mr-3">3</span> サプライチェーンの強靭化</li>
-                                 <li class="flex items-center"><span class="w-8 h-8 rounded-full bg-[#2C3E50] text-white flex items-center justify-center font-bold mr-3">4</span> 国際標準化戦略の推進</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section id="sustainability" class="mb-16 scroll-mt-24">
-                    <h2 class="text-3xl font-bold border-l-4 border-[#E67E22] pl-4 mb-4">持続可能性</h2>
-                    <p class="text-base mb-8 text-[#7F8C8D]">
-                        日本の未来を見据え、経済・財政・社会保障制度の持続可能性を確保するための改革である。経済再生と財政健全化の両立を目指す新たな計画から、全世代型社会保障の構築、そして喫緊の課題である少子化対策まで、次世代に責任を持つための政策を示すものである。
-                    </p>
-                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="bg-white p-6 rounded-lg shadow">
-                            <h3 class="text-xl font-bold mb-4">経済・財政新生計画</h3>
-                            <p class="text-sm text-[#7F8C8D] mb-4">
-                                2025年度からの6年間で経済再生と財政健全化の両立を目指すものである。プライマリーバランス（PB）の黒字化と、債務残高対GDP比の安定的引き下げが目標である。
-                            </p>
-                            <div class="chart-container h-64">
-                                 <canvas id="fiscalHealthChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow">
-                            <h3 class="text-xl font-bold mb-4">全世代型社会保障と少子化対策</h3>
-                            <p class="text-sm text-[#7F8C8D] mb-4">
-                                社会保障制度の持続性を高めるとともに、「こどもまんなか社会」の実現を加速するものである。
-                            </p>
-                            <ul class="space-y-3">
-                                <li>
-                                    <h5 class="font-bold">医療・介護制度改革</h5>
-                                    <p class="text-sm pl-4">公定価格引き上げによる処遇改善、医療・介護DXの推進。</p>
-                                </li>
-                                <li>
-                                    <h5 class="font-bold">こども未来戦略の本格実施</h5>
-                                    <p class="text-sm pl-4">2026年度から「子ども・子育て支援金制度」を導入し、安定財源を確保。</p>
-                                </li>
-                                 <li>
-                                    <h5 class="font-bold">公教育の再生</h5>
-                                    <p class="text-sm pl-4">教師の働き方改革と処遇改善を緊急に進める。</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-
-        <section id="report" class="page-section">
-            <div class="bg-white p-6 sm:p-8 rounded-lg shadow report-content">
-                <h1 class="text-4xl font-bold mb-8 text-center">経済財政運営改革基本方針分析と政策評価</h1>
-
-                <h2>I. エグゼクティブサマリー</h2>
-                <p>本報告書は、日本政府が提示した「経済財政運営と改革の基本方針2025（原案）」（以下、「基本方針2025」）に関する詳細な分析を提供する。この基本方針は、日本経済の長期的課題と当面の機会に対応するための政府の包括的な戦略を示すものである。</p>
-                <p>基本方針2025の核心は、日本経済を過去30年間続いた「コストカット型経済」から「賃上げを起点とした成長型経済」へと転換させるという明確な意志にある。この転換は、国民が「今日より明日はよくなる」と実感できる「新しい日本・楽しい日本」の実現を目指すものである。</p>
-                <p>この目標達成に向け、基本方針2025はいくつかの戦略的柱を打ち出している。最重要課題として位置づけられているのは、持続的な賃上げの実現であり、特に雇用の大部分を占める中小企業（SME）における賃金上昇が重視される。これと並行し、「地方創生2.0」を通じて地域経済の活性化と魅力向上を図り、人口減少下でも持続可能な社会を目指す。さらに、「投資立国」および「資産運用立国」構想を推進し、企業の稼ぐ力を高め、家計の資産形成を後押しすることで、将来の賃金・所得増につなげる。</p>
-                <p>環境問題とデジタル化への対応も急務とされ、GX（グリーン・トランスフォーメーション）およびDX（デジタル・トランスフォーメーション）への大胆な投資と社会実装が計画されている。また、頻発する自然災害や変化する国際情勢を踏まえ、防災・減災・国土強靱化、経済安全保障の強化といった国家のレジリエンス向上策も不可欠な要素として盛り込まれている。</p>
-                <p>財政運営に関しては、「経済・財政新生計画」の枠組みの下、経済再生と財政健全化の両立を目指す方針が示されている。具体的には、可能な限り早期のプライマリーバランス（PB）黒字化と、債務残高対GDP比の安定的な引き下げが目標とされるが、米国の関税措置など外部リスクへの機動的な対応も視野に入れている。</p>
-                <p>本報告書の後半では、これらの政策を戦略的重要性、経済的影響、社会的影響、実現可能性、変革可能性の観点から評価し、ランキング形式で提示する。この評価に基づき、特に注目すべきは、中小企業の賃上げを包括的に支援する「賃金向上推進5か年計画」、災害対応能力を抜本的に強化する「防災庁」の設置構想、そして経済成長と環境目標の両立を目指す「GXの推進」といった施策である。これらの政策は、広範な市場や業界に影響を与え、日本の将来像を左右する可能性を秘めている。</p>
-
-                <h2>II. 「基本方針2025」の解読：基本哲学とマクロ経済の青写真</h2>
-                <h3>A. ビジョン：「新しい日本・楽しい日本」 – 成長型経済への移行</h3>
-                <p>基本方針2025が掲げる最も包括的なビジョンは、「新しい日本・楽しい日本」の実現である。これは、国民一人ひとりが「今日より明日はよくなる」と実感できる社会を目指すものであり、その達成手段として「賃上げを起点とした成長型経済の実現」が据えられている。このビジョンは、単なる経済指標の改善に留まらず、国民の生活実感や幸福感の向上を重視する姿勢を示唆している。実際に、基本方針の後半ではWell-beingに関するKPI（重要業績評価指標）の活用にも言及されており、政策評価の軸が広がりつつあることがうかがえる。</p>
-                <p>この方針は、日本経済が過去30年間直面してきた「コストカット型経済」からの明確な決別を宣言している。デフレマインドの払拭と持続的な成長軌道への復帰が、最重要課題として認識されている。このパラダイムシフトは、安倍政権下で始まった「新しい資本主義」の理念を継承・発展させるものであり、成長と分配の好循環を通じて、より包摂的で持続可能な経済社会を構築することを目指している。</p>
-                <h3>B. 国内外の逆風への対応：主要課題とリスク</h3>
-                <p>基本方針2025は、日本が直面する国内外の厳しい環境認識から出発している。国際的には、「自国第一主義や権威主義的国家の台頭」や「力や威圧による一方的な現状変更の試み」といった地政学的リスクの高まりが指摘され、国際秩序の不安定化が経済運営における不確実性を増大させていると分析している。</p>
-                <p>国内に目を向ければ、頻発する大規模自然災害への対応、老朽化するインフラの維持・更新、エネルギー・食料安全保障の確立といった喫緊の課題が山積している。さらに、本格的な人口減少社会への突入は、労働力不足、社会保障制度の持続可能性への懸念、国内市場の縮小といった構造的な課題を日本経済に突きつけている。</p>
-                <p>当面のリスクとしては、特に米国による一連の関税措置とその報復措置の応酬が、日本の輸出や企業・家計マインドに悪影響を及ぼす可能性が警戒されている。また、食料品を中心とする物価高の継続も、国民生活と事業活動への圧迫要因として認識されている。このような国際情勢の不確実性の高まりは、経済安全保障、サプライチェーンの強靭化、戦略的自律性の確保といった政策の重要性を一層際立たせている。基本方針全体を通じてこれらの要素が繰り返し強調されているのは、日本がより自立的で強靭な経済構造を構築しようとする強い意志の表れと言える。</p>
-                <h3>C. 包括的な戦略目標と指導原則</h3>
-                <p>基本方針2025は、これらの課題とリスクに対応するため、いくつかの明確な戦略目標と指導原則を提示している。</p>
-                <p>その筆頭に挙げられるのが、「賃上げこそが成長戦略の要」という認識である。政府は、物価上昇を安定的に上回る賃上げを実現し、年率1%程度の実質賃金上昇を定着させることを目指している。この目標達成のため、「減税より賃上げ」という原則を掲げ、税制措置による一時的な手取り増ではなく、持続的な賃金上昇を通じて家計所得の向上を図る方針を明確にしている。この方針は、企業の賃上げ努力を促すとともに、労働分配率の改善に向けた政府の強い期待を示すものであり、従来のサプライサイド重視の経済政策からの転換を示唆している可能性がある。</p>
-                <p>また、「人中心の国づくり」も重要な指導原則として掲げられている。これは、人材育成、教育改革、働きがいのある環境整備を通じて、国民一人ひとりの能力を最大限に引き出し、社会全体の活力を高めることを目指すものである。</p>
-                <p>財政運営に関しては、「経済・財政新生計画」の枠組みの下で、経済再生と財政健全化の両立を目指す方針が堅持されている。市場の信認を確保しつつ、必要な政策対応を行うための財政余力を確保することの重要性が強調されている。</p>
-                <p>金融政策については、引き続き日本銀行と緊密に連携し、経済・物価動向に応じた機動的なマクロ経済政策運営を行うとし、日本銀行には2%の物価安定目標の持続的・安定的な実現が期待されている。</p>
-
-                <h2>III. 重点政策分野と主要構想の詳細分析</h2>
-                <h3>A. 柱1：持続的賃上げによる成長の実現（第2章1）</h3>
-                <h4>1. 中小企業の活力向上：賃金向上推進5か年計画の実行</h4>
-                <p>基本方針2025における最重要課題の一つは、経済全体の約7割の雇用を支える中小企業・小規模事業者（以下、中小企業）の賃金引き上げである。このため、「中小企業・小規模事業者の賃金向上推進5か年計画」を策定し、2029年度までの5年間で日本経済全体で年1%程度の実質賃金上昇を定着させることを目指す。</p>
-                <p>この計画の核心は、中小企業が賃上げ原資を確保できる環境整備にある。具体的には、以下の施策が総動員される。</p>
-                <ul>
-                <li><strong>価格転嫁・取引適正化の徹底</strong>: 大企業との取引における中小企業の交渉力強化が不可欠である。このため、「官公需における価格転嫁のための施策パッケージ」を活用し、公共調達における適切な価格設定を推進する。また、改正が予定される下請代金支払遅延等防止法（中小受託取引適正化法）の執行体制を強化し、「労務費の適切な転嫁のための価格交渉に関する指針」の周知徹底を図ることで、サプライチェーン全体での公正な取引慣行の確立を目指す。これらの措置は、中小企業がコスト上昇分を製品・サービス価格に適切に反映させ、賃上げ余力を生み出すための生命線となる。</li>
-                <li><strong>生産性向上の強力な後押し</strong>: 飲食業、宿泊業、小売業など人手不足が深刻な12業種を対象に「省力化投資促進プラン」を策定し、官民合わせて5年間で約60兆円規模の生産性向上投資の実現を目指す。デジタルツールの導入支援、全国的な伴走型支援体制の構築、複数年にわたる支援などが計画されている。また、都市部の経営人材が地方中小企業の経営に参画する「週一副社長」制度の普及や、副業・兼業の促進も、経営ノウハウの移転と生産性向上に寄与すると期待される。この60兆円という目標は野心的であり、実際の投資実行には中小企業自身の意欲と、政府によるリスク軽減策やアクセスしやすい支援策が鍵となる。</li>
-                <li><strong>経営基盤強化のための事業承継・M&A支援</strong>: 「事業承継・M&Aに関する新たな施策パッケージ」に基づき、後継者難に悩む中小企業の円滑な事業承継や、M&Aによる経営規模拡大・効率化を後押しする。事業承継税制（特例措置）のあり方も検討課題とされる。</li>
-                <li><strong>地域における人材育成と処遇改善</strong>: デジタル技術などを活用してより高い賃金を得られる「アドバンスト・エッセンシャルワーカー」の育成や、医療・介護・保育・福祉分野における公定価格の引き上げを通じた処遇改善を進める。</li>
-                <li><strong>最低賃金の着実な引き上げ</strong>: 2020年代に全国平均1,500円という目標達成に向け、継続的な努力を行う。特に、目安を超える最低賃金引き上げを行った都道府県の中小企業に対しては、政府補助金による重点支援や交付金活用など、大胆な支援策を講じることで、賃上げと生産性向上の両立を後押しする。</li>
-                </ul>
-                <p>これらの政策は、中小企業全般、特に公共調達に関わる企業、飲食・宿泊・小売業、医療・介護・保育分野に大きな影響を与える。目標達成には、価格転嫁メカニズムの実効性、生産性向上投資の実際の進捗、そして最低賃金引き上げに伴う中小企業の負担吸収能力が試されることになる。</p>
-
-                <h4>2. 労働市場改革：三位一体戦略と中堅・中小企業支援</h4>
-                <p>持続的な賃上げを実現するためには、労働生産性の向上と労働市場の流動化が不可欠である。基本方針2025では、「三位一体の労働市場改革」と中堅・中小企業への支援を通じて、この課題に取り組む。</p>
-                <p><strong>三位一体の労働市場改革</strong>:</p>
-                <ul>
-                <li><strong>リ・スキリングの強化</strong>: AIを含むデジタル分野のスキル習得を支援するため、教育訓練給付金の対象講座を拡大し、非正規雇用労働者などがオンラインで職業訓練を受けられる機会を提供する。産学協働によるリ・スキリングプログラムも拡充し、年間約3,000人の修了者輩出を目指す。また、「ジョブ型人事指針」の周知や「人的資本可視化指針」の見直しを通じて、企業の人材戦略の転換を促す。</li>
-                <li><strong>労働移動の円滑化</strong>: 官民の求人情報を集約・分析する職業情報提供サイト（job tag）の機能を強化し、ハローワークの体制強化やAI活用により、在職者を含めたキャリアサポートを充実させる。これにより、成長分野への労働移動を促進する。</li>
-                <li><strong>多様で柔軟な働き方の推進</strong>: 短時間正社員制度、勤務間インターバル制度の導入促進、選択的週休3日制の普及、育児・介護と仕事の両立支援など、多様な働き方を推進する。特に、いわゆる「年収130万円の壁」問題については、2025年度中に事業主支援措置を実施し、就業調整を意識せずに働ける環境整備を目指す。働き方改革関連法施行後5年の総点検を踏まえ、労働基準法制の見直しも検討される。</li>
-                </ul>
-                <p>これらの改革は、労働市場全体に影響を及ぼすが、リ・スキリングの効果発現には時間を要する可能性がある。労働移動の円滑化は、伝統的な雇用慣行の変革と成長分野における魅力的な雇用の創出が前提となる。</p>
-                <p><strong>中堅・中小企業による賃上げの後押し</strong>:</p>
-                <p>中堅企業は、地域経済への波及効果が大きい存在として、その成長が重視される。研究開発や大規模設備投資への支援、ファンド等からの出資を通じた資金調達環境の整備、海外展開を担う高度人材の受け入れ支援などが計画されている。</p>
-                <p>中小企業に対しては、新事業進出・事業構造転換、研究開発、新製品・サービス開発への支援を強化する。また、地域社会の課題解決に貢献する「ローカル・ゼブラ企業」の育成も新たな焦点であり、社会的インパクト評価を資金調達に繋げる環境整備が進められる。</p>
-                <p>これらの施策は、建設業、運輸業、警備業といった個別業種における労務費基準の設定や価格転嫁の推進、医療・介護分野の処遇改善検討（2025年末までに結論）とも連動し、幅広い産業での賃上げを後押しすることを目指している。中堅企業の育成は、日本の産業構造に厚みを持たせ、新たな成長エンジンを創出する試みとして注目される。</p>
-                
-                <h3>B. 柱2：「地方創生2.0」 – 日本の地域再構築（第2章2）</h3>
-                <h4>1. 「令和の日本列島改造」：ビジョンと実行</h4>
-                <p>「地方創生2.0」は、「新しい日本・楽しい日本」を実現するための政策の核心と位置づけられ、「令和の日本列島改造」として強力に推進される。これは、従来の地方創生の取り組みを深化させ、人口減少下においても持続可能で活力ある地域社会を構築することを目指すものである。その基本構想は、都市と地方の二項対立を超え、より融合的で共生的な日本の姿を描き出す。</p>
-                <p><strong>基本原則と目指す社会像</strong>:</p>
-                <ul>
-                    <li>人口減少という現実を直視し、人口規模が縮小しても経済成長し社会機能を維持できる適応策を講じる。</li>
-                    <li>若者や女性に選ばれる魅力ある地域づくりを推進する。特に、固定的な性別役割分担意識（アンコンシャス・バイアス）が残る職場や地域社会と、変化した若い世代の意識とのギャップ解消が重要視される。</li>
-                    <li>AI・デジタル技術を徹底活用し、地域住民の生活環境向上、担い手不足への対応、地域資源と新技術を組み合わせた高付加価値な商品・サービスの創出を目指す。</li>
-                    <li>関係人口を中心とした人・モノ・技術の交流・結合を促進し、都市と地方の共生関係を構築する。</li>
-                </ul>
-                <p><strong>政策の5本柱と10年後の目標</strong>:</p>
-                <ol class="list-decimal list-inside mb-4 pl-4">
-                    <li><strong>安心して働き、暮らせる地方の生活環境の創生</strong>: 東京圏から地方への若者の流れを倍増させる。買物弱者対策、医療・介護サービス確保、交通空白地解消に取り組む市町村の割合を10割にする。希望する職員の副業・兼業が可能な職場環境を整備した事業者数を10割にする。</li>
-                    <li><strong>稼ぐ力を高め、付加価値創出型の新しい地方経済の創生（地方イノベーション創生構想）</strong>: 東京圏以外の道府県における就業者一人当たり年間付加価値労働生産性を東京圏と同水準にする。農林水産物・食品の輸出額とインバウンドによる食関連消費額の合計を3倍にする。価値創造を目指すスタートアップ企業等が存在する市町村の割合を10割にする。</li>
-                    <li><strong>人や企業の地方分散</strong>: 関係人口の量的拡大・質的向上（実人数1,000万人、のべ人数1億人）を目指し、「ふるさと住民登録制度」を創設する。</li>
-                    <li><strong>新時代のインフラ整備とAI・デジタルなどの新技術の徹底活用</strong>: GX産業立地を推進するためのインフラ整備（ワット・ビット連携）、デジタルライフラインの全国整備を進める。AIやデジタル技術を活用して地域課題解決に取り組む市町村の割合を10割にする。</li>
-                    <li><strong>広域リージョン連携</strong>: 都道府県域や市町村域を超えた広域的な連携による地方創生の取り組みを推進する。</li>
-                </ol>
-                <p>これらの目標達成のため、国は中小規模の地方公共団体への伴走支援を強化し、スーパーシティ、デジタル田園健康特区などの特区制度の運用を抜本的に強化する。2025年中にKPIを含む総合戦略を策定し、1年、3年、5年ごとの工程表を作成して進捗を管理する。このデータドリブンなアプローチと具体的な数値目標の設定は、これまでの地方創生策からの進化を示しており、成果達成への強い意志がうかがえる。特に「若者や女性に選ばれる地方」という視点は、地域の持続可能性にとって極めて重要である。</p>
-
-                <h4>2. 地域社会の課題への対応：インフラ、交通、観光、デジタル接続（ワット・ビット連携）</h4>
-                <p>「地方創生2.0」のビジョン実現には、地域が抱える具体的な社会課題への対応が不可欠である。基本方針2025では、持続可能な国土形成、交通システムの再設計、観光振興、そしてデジタルインフラの整備に重点を置いている。</p>
-                <ul>
-                    <li><strong>持続可能な国土形成と交通のリ・デザイン</strong>:
-                    「コンパクト・プラス・ネットワーク」の取り組みを深化させ、地域生活圏を核としたサービス機能の集約と国土全体の連結強化を進める。都市再生や国際競争力強化、まちづくりGX、グリーンインフラの活用も推進される。
-                    特に深刻な課題である「交通空白」問題に対しては、2027年度までの集中対策期間を設け、公共交通や日本版ライドシェアの普及、民間技術の活用、国の伴走支援、新たな制度的枠組みの構築などを通じて解消を目指す。ローカル鉄道の再構築やラストワンマイル物流の確保も重要なテーマである。
-                    国際競争力強化の観点からは、高規格道路、整備新幹線、リニア中央新幹線、港湾、空港といった物流・人流ネットワークの早期整備・活用が掲げられている。造船業の再生も特筆すべき点で、ゼロエミッション船の開発・導入支援や海事人材育成を通じて、海事クラスターの強靭化を図る。これは、経済安全保障（サプライチェーン）とGX（海運の脱炭素化）の両面からの戦略的意義を持つ。
-                    物流分野では、2030年度までの「集中改革期間」において、次期「総合物流施策大綱」に基づき、物流DX、商慣行の見直し、荷主・消費者の行動変容などを推進する。</li>
-                    <li><strong>持続可能な観光の推進</strong>:
-                    2030年に訪日外国人旅行者数6,000万人・消費額15兆円という高い目標を掲げ、地方への誘客を強力に推進する。温泉・旅館・食・歴史といった日本の固有の観光資源を磨き上げ、アドベンチャーツーリズムなど多様なコンテンツ造成、観光人材育成、高付加価値なインバウンド観光地づくりを進める。空港・二次交通などの受け入れ環境整備も急務とされる。2025年度末までに新たな「観光立国推進基本計画」を策定し、財源確保策も検討する。</li>
-                    <li><strong>ワット・ビット連携</strong>:
-                    電力（ワット）と通信（ビット）の連携を強化し、データセンターの地方分散を戦略的に推進する。オール光ネットワーク技術の実装を進め、脱炭素電力が豊富な地域や災害に強い地域へのデータセンター誘致を図る。これは、デジタルインフラ整備をGX目標（再生可能エネルギー活用）や国土強靱化と結びつける複合的な戦略であり、地方における新たな産業集積の核となる可能性を秘めている。</li>
-                    <li><strong>関係人口の拡大と個性を活かした地域づくり</strong>:
-                    地方移住の促進、企業の地方移転・拠点拡充（税制活用も含む）、地域おこし協力隊の活用などを通じて、地方への新たな人の流れを創出する。前述の「ふるさと住民登録制度」の創設やワーケーション推進により、関係人口の拡大を目指す。沖縄振興、北海道総合開発計画の推進、過疎地域や離島などの条件不利地域対策も継続される。</li>
-                </ul>
-                <p>これらの施策は、建設、運輸、物流、観光、ICT、造船といった広範な産業に影響を与える。特に、データセンターの地方分散や造船業の再生といった動きは、新たな投資機会や雇用創出につながる可能性がある。</p>
-
-                <h4>3. 第一次産業の変革：農林水産業の成長産業化と食料安全保障</h4>
-                <p>日本の農林水産業は、従事者の高齢化や後継者不足、国際競争の激化といった課題に直面している。基本方針2025では、これらの産業を「成長産業化」させると同時に、国民生活の基盤である「食料安全保障」を確保するという二つの目標を追求する。</p>
-                <p><strong>農業構造転換集中対策期間（令和7～11年度）</strong>:
-                新たな食料・農業・農村基本法に基づき、最初の5年間を集中対策期間と位置づけ、構造転換を加速する。</p>
-                <ul>
-                    <li><strong>コスト低減と生産性向上</strong>: 農地の大区画化、共同利用施設の再編・集約、スマート農業技術（AI、ドローン、ロボット等）の開発・実装を推進し、収益力向上と所得向上を目指す。</li>
-                    <li><strong>輸出戦略の強化</strong>: 輸出産地の育成を計画的に進め、農林水産物・食品の輸出額5兆円目標の達成を目指す。輸出、海外進出、インバウンドの好循環を創出する。</li>
-                    <li><strong>水田政策の見直しと需要拡大</strong>: 米価安定と安定供給を図りつつ、新市場開拓用米や米粉用米の需要を拡大する。麦、大豆、国産飼料の生産性向上、有機農業や減農薬・減化学肥料栽培の推進、地域計画に基づく農地の集約化も支援する。</li>
-                    <li><strong>食料自給力の確保</strong>: 土地改良事業の推進、新規就農・参入支援、経営安定対策、多収品種の導入、情報通信環境の整備、農業関連スタートアップやサービス事業体の育成、動植物検疫の強化などを通じて、国内生産基盤を強化する。</li>
-                    <li><strong>持続可能な食料システムの確立</strong>: 合理的な価格形成メカニズムの構築、食品産業の持続的発展、食品アクセスの確保、農業分野におけるGX（GHG排出削減）、大人の食育などを推進する。</li>
-                </ul>
-                <p><strong>林業・水産業の振興</strong>:</p>
-                <ul>
-                    <li><strong>林業</strong>: 森林の集約化、スマート林業の推進、国産材（CLT、JAS構造材）の利用拡大、林道整備や再造林を進める。</li>
-                    <li><strong>水産業</strong>: 海洋環境の変化を踏まえ、資源調査・評価の抜本的改善、新たな操業形態への転換支援、漁業経営体・人材の確保、養殖業の成長産業化、海業（漁村地域の多角的な活性化）の全国展開を推進する。</li>
-                </ul>
-                <p>これらの政策は、農業、林業、水産業および関連する食品加工業、流通業、輸出業に直接的な影響を与える。「成長産業化」と「食料安全保障」という二つの目標は、時に資源配分や土地利用（輸出用作物か国内向け主食かなど）において緊張関係を生む可能性があり、政策運営にはバランス感覚が求められる。自民党内でも食料安全保障は重要政策として位置づけられており、この側面は特に政治的な注目度が高い。</p>
-
-                <h4>4. 文化芸術・スポーツ振興による地域成長の促進</h4>
-                <p>文化芸術およびスポーツは、経済的価値を生み出し、地域を活性化させる「ソフトパワー」として、その振興が図られる。</p>
-                <p><strong>文化芸術立国の実現</strong>:
-                官民投資を国際的に遜色ない水準まで拡大し、経済成長と文化芸術振興の好循環を目指す。</p>
-                <ul>
-                    <li><strong>コンテンツ産業の強化</strong>: アニメ、映画、ゲームなどのコンテンツ分野における高度専門人材の育成、海外展開支援を加速する
